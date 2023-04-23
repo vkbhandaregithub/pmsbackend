@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "/package.json", "use": "npm" },
+    { "src": "backend/package.json", "use": "npm" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "backend/index.js" },
+    { "src": "/(.*)", "dest": "/index.js" }
+  ]
+}
